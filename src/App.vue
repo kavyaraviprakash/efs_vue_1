@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-app-bar app color="blue">
-      <v-toolbar-title >Eagle Finance Services</v-toolbar-title>
+      <v-toolbar-title > <fa icon='home'/> Eagle Finance Services</v-toolbar-title>
       <v-spacer></v-spacer>
-      <div class="hidden-xs-only">
+      <div class="animate__animated animate__bounce">
         <v-btn
           v-for="item in menu"
           :key="item.title"
@@ -50,7 +50,14 @@
       </div>
     </v-app-bar>
     <v-content>
+      <transition
+       mode="out-in"
+       enter-active-class="animate__animated animate__fadeIn"
+       leave-active-class="animate__animated animate__fadeOut"
+       >
       <router-view/>
+      </transition>
+
     </v-content>
   </v-app>
 

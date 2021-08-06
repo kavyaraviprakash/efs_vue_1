@@ -7,11 +7,16 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import VueSession from 'vue-session'
 import '@mdi/font/css/materialdesignicons.css'
+import 'animate.css';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {fas} from  '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
  
 Vue.use(Vuetify, {
   icons: {
     iconfont: 'mdi'
   }
+
 })
 Vue.use(VueSession)
 

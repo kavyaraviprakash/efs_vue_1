@@ -88,7 +88,6 @@
 
 <script>
   import router from '../router';
-
   export default {
     name: 'Home',
     data: () => ({
@@ -118,4 +117,4 @@
       }
     }
   }
-</script>
+</script>ß
